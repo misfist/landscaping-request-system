@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-global $lrs_db_version;
+global $lrs_db_version;  // If you want to track the version of your DB currently on the site
 $lrs_db_version = '1.0';
 
 /**
@@ -48,13 +48,13 @@ function lrs_get_id( $entity ) {
 
     switch( $entity ) {
         case 'order' :
-            $sql = "";
+            $sql = ""; // SQL statement if $entity passed is 'order'
         break;
         case 'service' :
-            $sql = "";
+            $sql = ""; // SQL statement if $entity passed is 'order'
         break;
         case 'city' :
-            $sql = "";
+            $sql = ""; // SQL statement if $entity passed is 'order'
         break;
     }
 
@@ -66,6 +66,7 @@ function lrs_get_id( $entity ) {
     
     return false;
 }
+
 
 // function to get bookingIds
 function getBookingId(){

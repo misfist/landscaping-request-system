@@ -29,6 +29,7 @@ define( 'LRS_DIR_URI', plugin_dir_url( __FILE__ ) );
 require_once( LRS_DIR . '/includes/request.php' 		);
 require_once( LRS_DIR . '/includes/contact-form.php' 	);
 require_once( LRS_DIR . '/includes/confirmation.php' 	);
+require_once( LRS_DIR . '/includes/calendar.php' 	    );
 
 require_once( LRS_DIR . '/includes/helpers.php' 		);
 require_once( LRS_DIR . '/includes/dbfunctions.php'     );
